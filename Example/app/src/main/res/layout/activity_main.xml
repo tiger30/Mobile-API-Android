@@ -1,0 +1,276 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            tools:context=".MainActivity"
+            android:padding="16dp"
+        >
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+        <LinearLayout
+                android:id="@+id/orientationGroupContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/description_container"
+                android:orientation="vertical">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Orientation"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    />
+            <RadioGroup
+                    android:id="@+id/orientationGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:gravity="left"
+                    >
+                <RadioButton
+                        android:id="@+id/default_orientation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Default"
+                        android:layout_marginRight="8dp"
+                        android:checked="true"
+                        android:onClick="onRadioButtonClicked"
+                        />
+                <RadioButton
+                        android:id="@+id/portrait_orientation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Portrait"
+                        android:layout_marginRight="8dp"
+                        android:onClick="onRadioButtonClicked"
+                        />
+                <RadioButton
+                        android:id="@+id/landscape_orientation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Landscape"
+                        android:onClick="onRadioButtonClicked"
+                        />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <View
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/button_start_payment"
+                android:layout_margin="15dp"
+                android:background="#888888"/>
+        <LinearLayout
+                android:id="@+id/amount_container1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/amount"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:width="0dp"/>
+
+            <EditText
+                    android:id="@+id/editText_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="100"
+                    android:width="0dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/currency_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/currency"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:width="0dp"/>
+
+            <RadioGroup
+                android:id="@+id/currency_radiogroup"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/curreny_eur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/euro"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/curreny_gbp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gbp"/>
+
+                <RadioButton
+                    android:id="@+id/curreny_p"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pln"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/amount_container2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/email"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:width="0dp"/>
+
+            <EditText
+                    android:id="@+id/editText_email"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/optional"
+                    android:width="0dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/description_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/amount_container"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/description"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:width="0dp"/>
+
+            <EditText
+                    android:id="@+id/editText_description"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="api example"
+                    android:width="0dp"/>
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/button_start_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/orientationGroupContainer"
+                android:layout_centerHorizontal="true"
+                android:text="@string/start_payment"
+                android:layout_marginTop="15dp"
+                />
+
+        <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/button_start_payment"
+                android:layout_margin="15dp"
+                android:background="#888888"/>
+
+
+        <LinearLayout
+                android:id="@+id/orderId_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider2"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/order_id"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:width="0dp"/>
+
+            <EditText
+                    android:id="@+id/editText_order_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:width="0dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_start_refund"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_refund" />
+
+        <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/button_start_payment"
+                android:layout_margin="15dp"
+                android:background="#888888"/>
+
+        <Button
+            android:id="@+id/button_start_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_history" />
+
+        <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/button_start_refund"
+                android:layout_margin="15dp"
+                android:background="#888888"/>
+
+        <Button
+                android:id="@+id/button_start_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divider3"
+                android:layout_centerHorizontal="true"
+                android:text="@string/start_details"/>
+    </LinearLayout>
+
+</ScrollView>

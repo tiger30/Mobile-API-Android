@@ -1,0 +1,19 @@
+<resources>
+    <string name="api_key">6838f633caa8472285233e996152d29f</string>
+    <string name="app_name">PaylevenApiSample</string>
+    <string name="start_payment">Start payment</string>
+    <string name="amount">Amount</string>
+    <string name="email">Email</string>
+    <string name="description">Description</string>
+    <string name="invalid_amount">Amount is not a number</string>
+    <string name="start_history">Open sales history</string>
+    <string name="start_refund">Start refund</string>
+    <string name="start_details">Start details</string>
+    <string name="order_id">order id</string>
+    <string name="optional">optional</string>
+    <string name="install_payleven">Install payleven application from Google Playstore.</string>
+    <string name="euro">EUR</string>
+    <string name="gbp">GBP</string>
+    <string name="pln">PLN</string>
+    <string name="currency">Curreny</string>
+</resources>
