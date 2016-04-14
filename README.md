@@ -10,7 +10,7 @@ The PaylevenAppApi makes possible for app developers to open the payleven applic
 - Accept all major card schemes such as Visa, Mastercard or American Express
 - Provide immediate information about the payment status 
 - Refund card payments
-- Support cash payment method
+- Supports cash payment method
 - Supports all main languages
 
 #### Limitations
