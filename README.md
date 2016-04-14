@@ -22,7 +22,7 @@ The PaylevenAppApi makes possible for app developers to open the payleven applic
 To process a transaction you need to login in the payleven app with our payleven account. You can create an account by registering on our [webiste](https://payleven.co.uk/registration/?login=). Make sure to register for the country you wish.
 
 ######Step 2 - Create a developer account
-To grant your application access to payleven’s API you need to [register](https://service.payleven.com/uk/developer/) and receive an API key. Please keep in mind that you should use your final app specifications (e.g bundle-ID for iOS or package name for Android) during the registration since these will be used in combination with your API key to identify of your app.
+To grant your application access to payleven’s API you need to [register](https://developer.payleven.com/) and receive an API key. Please keep in mind that you should use your final app specifications (e.g bundle-ID for iOS or package name for Android) during the registration since these will be used in combination with your API key to identify of your app.
 
 ######Step 3 - Install the payleven app
 Althought the payment is initiated in your app; the actual transaction takes place within the payleven app. For this reason, the payleven app must be installed on the mobile device you wish to use for accepting card payments.
