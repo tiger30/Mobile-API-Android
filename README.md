@@ -15,10 +15,6 @@ The PaylevenAppApi makes possible for app developers to open the payleven applic
 - Supports cash payment method
 - Supports all main languages
 
-### Limitations
-- Available only on the markets where [payleven](https://payleven.com/) operates
-- Limited control on the UI 
-
 ### Prerequisites
 * You or your client is operating in one of the countries supported by payleven.
 * You are registered as a regular payleven user in a [payleven country](https://payleven.com/).
