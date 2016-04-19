@@ -3,7 +3,7 @@
 [![API](https://img.shields.io/badge/API-14%2B-orange.svg?style=flat-square)](http://developer.android.com/about/versions/android-4.0.html)
 [![Berlin](https://img.shields.io/badge/Made%20in-Berlin-red.svg?style=flat-square)](https://payleven.de/)
 
-# payleven Point Pay API for Android
+# payleven Point Pay API
 
 The PaylevenAppApi makes possible for app developers to open the payleven application from within their own apps and process payments. Although the payment is initiated on your app, it is the payleven application that takes care of handling the payment process. After a payment is processed, it will open your app and notify if the payment was successful, canceled or failed. 
 
