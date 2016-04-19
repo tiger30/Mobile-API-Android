@@ -7,7 +7,7 @@
 
 The PaylevenAppApi makes possible for app developers to open the payleven application from within their own apps and process payments. Although the payment is initiated on your app, it is the payleven application that takes care of handling the payment process. After a payment is processed, it will open your app and notify if the payment was successful, canceled or failed. 
 
-#### Main Features
+### Main Features
 - Connects to payleven EMV/PCI certified card reader via bluetooth
 - Accept all major card schemes such as Visa, Mastercard or American Express
 - Provide immediate information about the payment status 
@@ -15,7 +15,7 @@ The PaylevenAppApi makes possible for app developers to open the payleven applic
 - Supports cash payment method
 - Supports all main languages
 
-#### Limitations
+### Limitations
 - Available only on the markets where [payleven](https://payleven.com/) operates
 - Limited control on the UI 
 
